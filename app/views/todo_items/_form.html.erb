@@ -1,3 +1,4 @@
+<!-- generate form to create a todo_item for a specific todo_list-->
 <%= form_for([@todo_list, @todo_list.todo_items.build]) do |f| %>
     <%= f.text_field :content, placeholder: "New Todo" %>
     <%= f.submit %>

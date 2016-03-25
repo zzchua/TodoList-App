@@ -1,2 +1,4 @@
+<!-- displays a todo_item -->
 <p><%= todo_item.content %></p>
+<!-- Delete a todo_item -->
 <%= link_to "Delete", todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } %>

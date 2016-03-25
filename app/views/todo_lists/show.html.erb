@@ -10,9 +10,13 @@
   <%= @todo_list.description %>
 </p>
 
+
+<!-- display todo_items -->
 <div id="todo_items_wrapper">
+    <!-- renders the todo_item partial -->
     <%= render @todo_list.todo_items %>
         <div id="form">
+            <!-- render the form partial -->
             <%= render "todo_items/form" %>
         </div>
 </div>
