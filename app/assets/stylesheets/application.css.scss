@@ -1,0 +1,158 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAF3DD;
+    font-family: ubuntu;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+#content {
+    padding-top: 2px;
+    background-color: #FAF3DD;
+    /*border-radius: 10px;*/
+    text-align: center;
+}
+
+.list, .title-field, .text-field {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8FC0A9;
+    overflow: hidden;
+}
+
+.title-field {
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.text-field {
+    background-color: #C8D5B9;
+}
+
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.list-content {
+    padding-bottom: 5px;
+}
+
+.list-content:hover{
+    background-color: #68B0AB;
+}
+
+.edit:hover, .delete:hover {
+    background-color: #8FC0A9;
+}
+
+#new-todo:hover {
+    background-color: #68B0AB;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+#new-todo, #back-to-main, #edit-todo {
+    background-color: #8FC0A9;
+    border: 1px solid #28747A;
+}
+
+.delete, .edit {
+    float:left;
+    width: 50%;
+    background-color: #C8D5B9;
+    padding-top: 7px;
+}
+
+.list-content p {
+    margin-bottom: 0px;
+}
+
+.todo-item-box {
+  overflow: hidden;
+  background-color: #68B0AB;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.complete, .todo_item, .trash {
+    float: left;
+}
+
+.todo_item {
+    width: 60%;
+}
+
+.complete, .trash {
+    background-color: #C8D5B9;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 15%;
+}
+
+.complete:hover, .trash:hover {
+    background-color: #FAF3DD;
+}
+
+.todo_item p {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+#edit-todo, #back-to-main {
+    float: left;
+    width: 50%;
+    border-radius: 0px;
+}
+
+#edit-todo:hover, #back-to-main:hover {
+    background-color: #C8D5B9;
+}
+
+.nav-todo-list {
+    overflow: hidden;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+h2.header-h2 {
+    background-color: #68B0AB;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#back-todo {
+    margin-top: 10px;
+}

@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
+<div class="list">
+    <h2>
+      <%= @todo_list.title %>
+    </h2>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
-</p>
+    <p>
+      <%= @todo_list.description %>
+    </p>
+</div>
 
 
 <!-- display todo_items -->
@@ -21,6 +21,18 @@
         </div>
 </div>
 
+<div class="nav-todo-list">
+    <div class="edit-todo">
+      <%= link_to  edit_todo_list_path(@todo_list)  do%>
+        <button class="btn btn-default" id="edit-todo" type="submit">Edit Todo List</button>
+      <% end %>
+    </div>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+    <div class="back-to-main">
+      <%= link_to  todo_lists_path  do%>
+        <button class="btn btn-default" id="back-to-main" type="submit">Back</button>
+      <% end %>
+    </div>
+</div>
+
+
