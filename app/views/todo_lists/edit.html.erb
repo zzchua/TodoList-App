@@ -2,5 +2,16 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @todo_list %> |
-<%= link_to 'Back', todo_lists_path %>
+<div class="nav-todo-list">
+    <div class="edit-todo">
+      <%= link_to  @todo_list  do%>
+        <button class="btn btn-default" id="edit-todo" type="submit">Go to list</button>
+      <% end %>
+    </div>
+
+    <div class="back-to-main">
+      <%= link_to  todo_lists_path  do%>
+        <button class="btn btn-default" id="back-to-main" type="submit">Back</button>
+      <% end %>
+    </div>
+</div>
