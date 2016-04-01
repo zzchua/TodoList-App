@@ -1,9 +1,5 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@font-face {
-  font-family: "hv1";
-  src: url(/assets/fonts/hv1.otf) format("truetype");
-}
 
 
 body {
@@ -11,11 +7,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #FAF3DD;
-    font-family: "ubuntu", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 h1 {
-    font-family: "ubuntu medium", sans-serif;
+    font-weight: bolder;
+}
+
+
+
+.list-content p {
+    font-weight: lighter;
 }
 
 #header {
@@ -38,8 +40,8 @@ h1 {
 }
 
 .list {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .text-field {
@@ -67,7 +69,8 @@ a:hover {
 }
 
 .list-content {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .list-content:hover{
@@ -164,8 +167,10 @@ h2.header-h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
 }
 
 #back-todo {

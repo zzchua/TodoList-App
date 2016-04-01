@@ -4,20 +4,28 @@
             <p><strike><%= todo_item.content %></strike></p>
         </div>
         <div class="complete">
-            <%= link_to "Done", complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch %>
+            <%= link_to complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch do %>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <% end %>
         </div>
         <div class="trash">
-            <%= link_to "Delete", todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+            <%= link_to todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            <% end %>
         </div>
     <% else %>
         <div class="todo_item">
             <p><%= todo_item.content %></p>
         </div>
         <div class="complete">
-            <%= link_to "Done", complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch %>
+            <%= link_to complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch do %>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <% end %>
         </div>
         <div class="trash">
-            <%= link_to "Delete", todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+            <%= link_to todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            <% end %>
         </div>
     <% end %>
 </div>
