@@ -10,7 +10,7 @@ to keep the databases similar on Heroku.
 
 See the app
 -------------
-Check out the app on heroku: [http://shrouded-oasis-58060.herokuapp.com/]
+Check out the app on heroku: http://shrouded-oasis-58060.herokuapp.com/
 
 
 Overview
